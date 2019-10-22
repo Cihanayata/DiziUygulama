@@ -20,7 +20,23 @@ namespace DiziUygulama
                 a[i] = sayi;               
                 Console.WriteLine(a[i]);
             }
-            
+              for (int i = 0; i < sayi.Length; i++)
+            {
+                for (int j  = 0; j < sayi.Length; j++)
+                {
+                    if (dizi[i] < sayi[a])
+                    {
+                        a = sayi[i];
+                        sayi[i] = sayi[j];
+                        sayi[j] = a;
+                    }
+                }
+
+            }
+            for (int k = 0; k < sayi.Length; k++)
+            {
+                Console.WriteLine(sayi[k]);
+            }
             Console.ReadKey();
         }
     }
